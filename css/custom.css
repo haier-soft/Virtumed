@@ -28,6 +28,10 @@
     background: url(../img/icons/check.svg) center no-repeat;
     margin-right: 20px;
 }
+.search-page h2 {
+    margin-bottom: 30px;
+    color: #373737;
+}
 @media screen and (max-width: 1285.98px) {
     .main-about__content p {
         font-size: 16px;

@@ -4744,10 +4744,6 @@ h5,
     background: url(../img/icons/mail-red.svg) center no-repeat, #fefefe;
   }
 
-  .header.active .header__container {
-    position: fixed;
-  }
-
   .header__container {
     height: 72px;
   }

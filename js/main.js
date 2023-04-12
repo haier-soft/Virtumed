@@ -1,4 +1,3 @@
-
  //open modal
  function openModal(modal, modalInner) {
   if (!document.querySelector(".header").classList.contains("active")) {
@@ -22,6 +21,7 @@ function closeModal(modal, modalInner) {
     }
   }, 500)
 }
+//search-page
 window.addEventListener("DOMContentLoaded", () => {
   //add padding to body  when overflow: hidden
   function togglePaddingOfBody() {
@@ -145,14 +145,17 @@ window.addEventListener("DOMContentLoaded", () => {
     formSearchBtn.forEach((item, idx) => {
       item.addEventListener("click", e => {
         e.preventDefault()
-      /* if (!formSearch[idx].classList.contains("active")) {
+      if (!formSearch[idx].classList.contains("active")) {
         formSearch[idx].classList.add("active")
       } else {
           if (formSearchInp[idx].value.length > 0) {
-            window.location.href = window.location.origin + `/search.html?search=${formSearchInp[idx].value}`
+            const activelang = document.querySelector(".lang__item.active").getAttribute("data-lang")
+            const addLang = activelang === "ru" ? "" : `/${activelang}`
+            window.location.href = window.location.origin + addLang + `/search.html?search=${formSearchInp[idx].value}`
           }
           formSearch[idx].classList.remove("active")
-        } */     
+          formSearchInp[idx].value = ""
+        }      
       }) 
     })
   }
