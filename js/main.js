@@ -151,7 +151,7 @@ window.addEventListener("DOMContentLoaded", () => {
           if (formSearchInp[idx].value.length > 0) {
             const activelang = document.querySelector(".lang__item.active").getAttribute("data-lang")
             const addLang = activelang === "ru" ? "" : `/${activelang}`
-            window.location.href = window.location.origin + addLang + `/search.html?search=${formSearchInp[idx].value}`
+            location.href = addLang + `/search.html?search=${formSearchInp[idx].value}`
           }
           formSearch[idx].classList.remove("active")
           formSearchInp[idx].value = ""
