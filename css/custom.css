@@ -1,4 +1,6 @@
 #eFiltr .sec-filter__body.active{height:auto;}
+#eFiltr_results_wrapper{flex: 1 1 auto;}
+.eFiltr .fltr_block{display:block;}
 .item-checkbox sup {
     font-size: 11px;
     color: #888888;
@@ -28,6 +30,9 @@
     background: url(../img/icons/check.svg) center no-repeat;
     margin-right: 20px;
 }
+.modal {
+    overflow: auto;
+}
 .search-page h2 {
     margin-bottom: 30px;
     color: #373737;
@@ -41,7 +46,12 @@
 }
 @media screen and (max-width: 992.98px) {
     .sidebar {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }

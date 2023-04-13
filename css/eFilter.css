@@ -1,6 +1,6 @@
 .eFiltr{display:block;}
 .eFiltr  label.disabled{color:#999999;}
-.eFiltr .fltr_block{display:block;}
+.eFiltr .fltr_block{display:inline-block;}
 .eFiltr .fltr_count{color:#333333;}
 .eFiltr .fltr_count:before{content:"("}
 .eFiltr .fltr_count:after{content:")"}
@@ -25,5 +25,5 @@
 .eFilter_sort_block .sorter.down:after{content:"\f106";font-family:FontAwesome;margin-left:2px;position:absolute;right:-13px;top:center;}
 
 
-#eFiltr_results_wrapper{position:relative;min-height:64px;flex: 1 1 auto;}
+#eFiltr_results_wrapper{position:relative;min-height:64px;}
 #eFiltr_results_wrapper .eFiltr_loader{position:absolute;top:10px;left:50%;margin-left:-32px;z-index:10;width:64px;height:64px;background:url(loader.GIF) 0 0 no-repeat;display:none;}
