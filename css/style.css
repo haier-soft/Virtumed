@@ -2382,6 +2382,13 @@ h5,
   margin: 16px 0 0 0;
 }
 
+.block-product img,
+.block-product video,
+.block-product iframe {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
 .block-product p {
   font-size: 20px;
   line-height: 23px;
@@ -2398,42 +2405,95 @@ h5,
   margin-bottom: 16px;
 }
 
-.block-product ul {
+.block-product ul,
+.block-product ol {
   margin-bottom: 30px;
 }
 
-.block-product ul:last-child {
+.block-product ul:last-child,
+.block-product ol:last-child {
   margin-bottom: 0;
 }
 
-.block-product ul li {
+.block-product ul li,
+.block-product ol li {
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
   margin-bottom: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
-.block-product ul li:last-child {
+.block-product ul li:last-child,
+.block-product ol li:last-child {
   margin-bottom: 0;
+}
+
+.block-product ul li {
+  padding-left: 30px;
+  position: relative;
 }
 
 .block-product ul li:before {
   content: "";
   display: block;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 16px;
-  flex: 0 0 16px;
   width: 16px;
   height: 4px;
   border-radius: 2px;
   background-color: #E85222;
   margin-right: 16px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.block-product ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.block-product strong,
+.block-product b,
+.block-product table caption {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.block-product h3 {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.block-product em {
+  font-style: italic;
+}
+
+.block-product p span {
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+.block-product table caption {
+  margin-bottom: 16px;
+}
+
+.block-product td {
+  font-weight: 300;
+}
+
+.block-product thead th code,
+.block-product thead td code,
+.block-product tfoot th code,
+.block-product tfoot td code {
+  background-color: #f5f5f5;
+}
+
+.block-product tbody tr {
+  background-color: #f5f5f5;
 }
 
 .product-feedback {
@@ -3614,6 +3674,18 @@ h5,
     flex: 0 0 22.5%;
   }
 
+  .block-product strong,
+  .block-product b,
+  .block-product table caption {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .block-product h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
   .privacy__title {
     margin-bottom: 12px;
   }
@@ -4152,7 +4224,8 @@ h5,
     margin-bottom: 20px;
   }
 
-  .block-product ul li {
+  .block-product ul li,
+  .block-product ol li {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -5032,9 +5105,22 @@ h5,
     margin-bottom: 20px;
   }
 
-  .block-product ul li {
+  .block-product ul li,
+  .block-product ol li {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .block-product strong,
+  .block-product b,
+  .block-product table caption {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .block-product h3 {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .product-feedback {
