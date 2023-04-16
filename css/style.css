@@ -2477,6 +2477,19 @@ h5,
   text-decoration-skip-ink: none;
 }
 
+.block-product table {
+  width: 100%;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+
+.block-product th,
+.block-product td {
+  padding: 10px 5px;
+  border: 1px solid;
+  vertical-align: top;
+}
+
 .block-product table caption {
   margin-bottom: 16px;
 }
